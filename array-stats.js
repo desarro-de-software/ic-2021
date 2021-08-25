@@ -9,11 +9,25 @@ class ArrayStats {
       return a - b;
     });
 
-    var half = Math.floor(values.length / 2);
+    let isNaN = false;
 
-    if (values.length % 2) return values[half];
+    for (let i; i < values.length; i++) {
+      if (values[i] == NaN) {
+        isNaN = true;
+      };
+    };
 
-    return (values[half - 1] + values[half]) / 2.0;
+    if (isNaN) {
+      throw new Error('Invalid argument.');
+    }
+    else {
+      var half = Math.floor(values.length / 2);
+
+      if (values.length % 2) return values[half];
+
+      return (values[half - 1] + values[half]) / 2.0;
+
+    };
   }
 
   min(values) {
