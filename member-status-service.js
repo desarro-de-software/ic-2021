@@ -16,7 +16,7 @@ class MemberStatusService {
   getActive(members) {
     const oneMonthAgo = dayjs(new Date()).subtract(1, "months");
     return members.filter(
-      (member) => member.balance >= 0 && member.lastPayment < oneMonthAgo
+      (member) => member.balance >= 0 && member.lastPayment > oneMonthAgo
     );
   }
 }
