@@ -15,7 +15,7 @@ const members = [
 // Los miembros activos son aquellos que tienen un balance mayor o igual a cero y el último pago hecho hace menos de un mes
 
 describe("active members", () => {
-  test("average", () => {
+  test("active", () => {
     expect(prueba.getActive(members)).toStrictEqual([
       { balance: 0, lastPayment: new Date("2021-08-15") }
     ]);
