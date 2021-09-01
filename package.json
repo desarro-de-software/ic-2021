@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "dayjs": "^1.10.6"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "jest": "^27.0.6"
   }
 }
