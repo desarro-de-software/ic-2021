@@ -1,4 +1,4 @@
-const ArrayStats = require("../array-stats.js");
+const ArrayStats = require("../array-stats");
 
 const prueba = new ArrayStats();
 
